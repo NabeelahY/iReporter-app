@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iReporter Form</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="form">
+		<div class="login">
+			<h1>iReporter</h1>
+			<input type="checkbox" id="form-switch">
+			<form id="lgform">
+				<input type="text" placeholder="Enter username" id="user" onsubmit="preventDefault();">
+				<input type="password" placeholder="Enter password" id="pass">
+				<button type="submit" id="submit"><a href="#">Login</a></button>
+				<label for="form-switch">Don't have an account?<span> Register here</span></label>
+				<!--<p class="signup">Don't have an account?<label for="form-switch"><a href="#">Register here</a></label></p>-->
+			</form>
+
+			<form id="register">
+				<input type="text" placeholder="Enter username" id="un" onsubmit="preventDefault();" >
+				<input type="email" placeholder="Enter email" name="email" id="email">
+				<input type="password" placeholder="Enter password" id="password">
+				<button type="submit" id="btn"><a href="#">Sign Up</a></button>
+				<label for="form-switch">Already have an account?<span> Login here</span></label>
+				<!--<p class="signup">Already have an account?<label for="form-switch"><span>Login here</span></label></p>-->
+			</form>
+			<p>Please use these login details... <br> Username: 'nabeelah' <br> Password: 'yousuph' </p>
+		</div>
+	</div>
+	<script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
