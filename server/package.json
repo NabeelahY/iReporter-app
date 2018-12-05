@@ -1,0 +1,14 @@
+{
+  "name": "server-js",
+  "version": "1.0.0",
+  "description": "iReporter App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nabeelah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
