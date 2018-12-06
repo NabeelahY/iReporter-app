@@ -42,5 +42,17 @@ router.post('/red-flags', function (req, res) {
 	});
 });
 
+router.patch('/red-flags/:id/location', function (req, res) {
+	const record = records.find(rec => rec.id ===  parseInt(req.params.id));
+	if(!record) res.status(404).send('The record does not exist');
+	res.status(200).json({
+		status: res.statusCode,
+		data: [{
+			id: records.length + 1,
+			message: 'Updated red-flag record\'s location'
+		}]
+	});
+});
+
 module.exports = router;
 
