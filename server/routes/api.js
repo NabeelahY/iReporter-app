@@ -10,3 +10,4 @@ router.get('/red-flags', function (req, res) {
 	});
 });
 
+module.exports = router;
