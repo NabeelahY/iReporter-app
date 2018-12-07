@@ -66,4 +66,20 @@ router.patch('/red-flags/:id/comment', function (req, res) {
 	});
 });
 
+router.delete('/red-flags/:id', function (req, res) {
+	const record = records.find(rec => rec.id ===  parseInt(req.params.id));
+	if(!record) res.status(404).send('The record does not exist');
+
+	const index = records.indexOf(record);
+	records.splice(index, 1);
+
+	res.status(200).json({
+		status: res.statusCode,
+		data: [{
+			id: records.length + 1,
+			message: 'Red-flag record has been deleted'
+		}]
+	});
+});
+
 module.exports = router;
