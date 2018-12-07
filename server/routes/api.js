@@ -22,4 +22,3 @@ router.get('/red-flags/:id', function (req, res) {
 });
 
 module.exports = router;
-
