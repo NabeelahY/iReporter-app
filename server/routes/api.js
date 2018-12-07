@@ -24,12 +24,12 @@ router.get('/red-flags/:id', function (req, res) {
 router.post('/red-flags', function (req, res) {
 	const newRecord = {
 		id: records.length + 1,
-		createdOn: "January 13th, 2017",
-		createdBy: 889,
-		type: "Red-flag",
-		location: "6.5244 N, 3.3792 E",
-		status: "draft",
-		comment: "Police harrased me for not giving them bribe"
+        createdOn: "January 13th, 2017",
+        createdBy: 889,
+        type: "Red-flag",
+        location: "6.5244 N, 3.3792 E",
+        status: "draft",
+        comment: "Police harrased me for not giving them bribe"
 	};
 	records.push(newRecord);
 	res.status(200).json({
@@ -81,4 +81,5 @@ router.delete('/red-flags/:id', function (req, res) {
 		}]
 	});
 });
+
 module.exports = router;
